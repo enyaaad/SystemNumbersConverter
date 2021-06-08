@@ -73,6 +73,26 @@ namespace convertionsystemnumbers.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TfHsZmVncPs {
+            get {
+                object obj = ResourceManager.GetObject("TfHsZmVncPs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TfHsZmVncPs1 {
+            get {
+                object obj = ResourceManager.GetObject("TfHsZmVncPs1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap yfm7g9_9QEM {
             get {
                 object obj = ResourceManager.GetObject("yfm7g9_9QEM", resourceCulture);
