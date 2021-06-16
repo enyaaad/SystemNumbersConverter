@@ -36,7 +36,8 @@ namespace ConvertSN
             int tempi = 0;
 			double tempd = 0.0;
             int xd;
-			if (numberS == "" || numberS == " ") throw EmptyString;
+            if (numberS == "" && numberS == " ")
+                return ans;
             if (fromNs < 2 || fromNs > 36 || toNs < 2 || toNs > 36) throw OutOfSystem;
             else
             {

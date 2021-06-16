@@ -43,8 +43,15 @@ namespace convertionsystemnumbers
 				if (xd >= currentns)
 				{
 					return -1;
-				}
+				} 
+
 			}
+				
+				if (number == "" || number == " ")
+				{
+					return -1;
+				}
+			
 			return 0;
 		}
 
@@ -55,19 +62,20 @@ namespace convertionsystemnumbers
 			int currentns = 0, futurens = 0;
 			int xd = 0;
 			int xz = 0;
-			try
-			{
-				textBox4.Text = "";
-				number = textBox2.Text;
-				currentns = Convert.ToInt32(numericUpDown1.Value);
-				futurens = Convert.ToInt32(numericUpDown2.Value);
-				xz = Error(number, xd, currentns);
-			}
-			catch
-			{
-				if (number == "" && number == " ")
-					MessageBox.Show("Enter Valid Value");
-			}
+            try
+            {
+                textBox4.Text = "";
+                number = textBox2.Text;
+                currentns = Convert.ToInt32(numericUpDown1.Value);
+                futurens = Convert.ToInt32(numericUpDown2.Value);
+                xz = Error(number, xd, currentns);
+            }
+            catch
+            {
+
+                MessageBox.Show("Enter Valid Value");
+            }
+            
 			if (xz == -1)
 			{
 				MessageBox.Show("Enter Valid Value");
@@ -75,8 +83,18 @@ namespace convertionsystemnumbers
 			else
 			{
 				textBox4.Text = ConvertNS.Converting(currentns, futurens, number);
-			}			
+
+			}
+			
 		}
 
-	}
+        private void button2_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			Math Math = new Math();
+			Math.ShowDialog();
+			
+        }
+
+    }
 }
